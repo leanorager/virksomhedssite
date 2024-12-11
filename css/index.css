@@ -7,11 +7,13 @@ h2 {
 }
 h3 {
   padding-left: 15px;
+  padding-top: 7px;
 }
 p {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 15px;
+  text-align: justify;
 }
 .knap_til_behandlinger {
   display: flex;
@@ -63,4 +65,16 @@ body {
   grid-row: 2 / span 1;
 }
 .booking {
+  background-color: rgb(224, 203, 175);
+}
+.telefon1,
+.telefon2 {
+  text-align: center;
+}
+.telefon2 {
+  padding-bottom: 15px;
+}
+.fakta {
+  padding: 15px;
+  color: rgb(120, 157, 128);
 }

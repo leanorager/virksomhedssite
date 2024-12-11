@@ -117,6 +117,47 @@ p {
   font-family: playfair;
   font-size: 14px;
 }
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: rgb(224, 203, 175);
+}
+.footer_menu {
+  display: flex;
+  list-style: none;
+  font-size: 11px;
+  font-family: playfair;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+.footer_menu .adresse {
+  text-decoration: underline;
+}
+.footer_menu li {
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.footer_menu a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+.footer_menu a:hover {
+  color: rgb(247, 243, 232);
+}
+.ikoner {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.ikoner a {
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
 /* herunder laves layoyt til desktop format */
 @media (min-width: 850px) {
   h1 {
