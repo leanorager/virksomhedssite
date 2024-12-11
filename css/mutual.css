@@ -111,11 +111,11 @@ h2 {
 h3 {
   font-family: quicksand;
   font-weight: 100;
-  font-size: 17px;
+  font-size: 18px;
 }
 p {
   font-family: playfair;
-  font-size: 15px;
+  font-size: 14px;
 }
 /* herunder laves layoyt til desktop format */
 @media (min-width: 850px) {

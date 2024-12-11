@@ -5,6 +5,9 @@ h2 {
   text-align: center;
   padding-bottom: 7px;
 }
+h3 {
+  padding-left: 15px;
+}
 p {
   padding-left: 15px;
   padding-right: 15px;
@@ -58,4 +61,6 @@ body {
   aspect-ratio: 1 / 1;
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
+}
+.booking {
 }
