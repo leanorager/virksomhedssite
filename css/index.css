@@ -15,8 +15,8 @@ p {
   justify-content: center;
   align-items: center;
   padding: 7px;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
   background-color: rgb(120, 157, 128);
   border: 0.5px solid black;
   border-radius: 7px;
@@ -31,4 +31,31 @@ p {
 }
 body {
   background-color: rgb(247, 243, 232);
+}
+.img_forside img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  padding: 7px;
+  filter: brightness(85%);
+}
+.img_forside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 8px;
+  padding: 15px;
+}
+.img1 {
+  aspect-ratio: 2 / 1.1;
+  grid-column: 1 / span 2;
+}
+.img2 {
+  aspect-ratio: 1 / 1;
+  grid-row: 2 / span 1;
+}
+.img3 {
+  aspect-ratio: 1 / 1;
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
 }
