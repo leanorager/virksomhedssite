@@ -180,4 +180,45 @@ footer {
     font-family: playfair;
     font-size: 18px;
   }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(224, 203, 175);
+  }
+  .footer_menu {
+    display: flex;
+    list-style: none;
+    font-size: 15px;
+    font-family: playfair;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    justify-content: left;
+  }
+  .footer_menu .adresse {
+    text-decoration: underline;
+  }
+  .footer_menu li {
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .footer_menu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+  }
+  .footer_menu a:hover {
+    color: rgb(247, 243, 232);
+  }
+  .ikoner {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .ikoner a {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
 }
