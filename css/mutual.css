@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Fonte */
+@font-face {
+  font-family: playfair;
+  src: url(../playfair_font/playfairdisplay-variablefont_wght-webfont.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 16px;
+  font-family: playfair;
+  background-color: rgb(224, 203, 175);
+}
+/* .logo img {
+  max-width: 
+} */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+.menu a {
+  display: block;
+  padding: 7px;
+  color: #030000f0;
+  background-color: rgb(247, 243, 232);
+  border-radius: 10px;
+
+  text-decoration: none;
+}
+.menu a:hover {
+  color: rgb(120, 157, 128);
+}
