@@ -78,3 +78,28 @@ body {
   padding: 15px;
   color: rgb(120, 157, 128);
 }
+/* LAYOUT TIL DESKTOP FORMAT */
+@media (min-width: 850px) {
+  .forside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  h1 {
+    padding-top: 4rem;
+  }
+  .knap_til_behandlinger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    margin-left: 9rem;
+    margin-right: 9rem;
+    background-color: rgb(120, 157, 128);
+    border: 0.5px solid black;
+    border-radius: 7px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
