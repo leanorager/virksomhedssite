@@ -1,0 +1,91 @@
+@media (max-width: 800px) {
+  .grid_1-1_beige {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid_1-1_brun {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid_1_beige {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--primary-color);
+  }
+
+  .grid_1_beige div {
+    grid-column: span 2;
+  }
+
+  .grid_1_brun {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--secondary-color);
+  }
+
+  .grid_1_brun div {
+    grid-column: span 2;
+  }
+
+  img {
+    aspect-ratio: 1 / 1;
+  }
+
+  .grid_1-1_beige {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column; /* Placerer tekst og billede i en kolonne */
+    align-items: center; /* Centrerer billedet horisontalt */
+    text-align: center;
+  }
+
+  .grid_1-1_brun {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column; /* Placerer tekst og billede i en kolonne */
+    align-items: center; /* Centrerer billedet horisontalt */
+    text-align: center;
+  }
+}
+
+.billede_midt {
+  width: 50%;
+}
+
+h1 {
+  background-color: var(--primary-color);
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  text-align: justify;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 8px;
+}
+
+.grid_1-1_beige {
+  background-color: var(--primary-color);
+}
+
+.grid_1-1_brun {
+  background-color: var(--secondary-color);
+}
