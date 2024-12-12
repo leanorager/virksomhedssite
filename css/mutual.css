@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  --primary-color: rgb(247, 243, 232);
+  --secondary-color: rgb(224, 203, 175);
+}
+
 /* Fonte */
 @font-face {
   font-family: playfair;
@@ -22,7 +28,7 @@ header {
   padding: 15px;
   font-size: 16px;
   font-family: playfair;
-  background-color: rgb(224, 203, 175);
+  background-color: var(--secondary-color);
 }
 /* .logo img {
   max-width: 
@@ -38,7 +44,7 @@ header {
   display: block;
   padding: 7px;
   color: #030000f0;
-  background-color: rgb(247, 243, 232);
+  background-color: var(--primary-color);
   border-radius: 10px;
 
   text-decoration: none;
