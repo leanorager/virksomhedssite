@@ -52,6 +52,10 @@ img {
   object-fit: cover;
 }
 
+.logo {
+  width: 20%;
+}
+
 @media (max-width: 800px) {
   .grid_1-1_beige,
   .grid_1-1_brun {
@@ -94,5 +98,9 @@ img {
 
   h1 {
     padding-bottom: 20px;
+  }
+
+  .logo {
+    width: 50%;
   }
 }
