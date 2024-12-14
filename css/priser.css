@@ -1,4 +1,86 @@
 /* MOBIL */
+body {
+  background-color: rgb(247, 243, 232);
+}
+
+.grid_1-1-1 img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.img_one,
+.img_two {
+  object-position: bottom;
+}
+
+.img_four {
+  object-position: right;
+}
+
+.img_five {
+  object-position: 0% 20%;
+}
+
+.col_color {
+  background-color: rgb(224, 203, 175);
+  padding: 50px 20px;
+} /* tjek op på dette */
+
+.col {
+  padding: 50px 20px;
+}
+
+.padding_none {
+  padding: 0px 20px 50px 20px;
+}
+
+h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.fed {
+  font-weight: 1000;
+} /* tjek op på dette */
+
+ul,
+li {
+  font-family: playfair;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+ul {
+  margin-bottom: 10px;
+}
+
+/* CTA */
+.cta-container {
+  text-align: center; /* Centrerer alt indhold i containeren */
+  margin: 30px 0;
+}
+
+.cta {
+  background-color: #789d80;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.cta a {
+  color: #f7f3e8;
+  text-decoration: none;
+}
 
 /* DESKTOP */
 @media (min-width: 850px) {
