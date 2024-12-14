@@ -44,6 +44,10 @@ h2 {
   padding: 10px 0px;
 }
 
+h3 {
+  margin-top: 20px;
+}
+
 p {
   margin-bottom: 10px;
 }
@@ -54,8 +58,6 @@ p {
 
 ul,
 li {
-  font-family: playfair;
-  font-size: 14px;
   padding-left: 20px;
 }
 
@@ -65,7 +67,7 @@ ul {
 
 /* CTA */
 .cta-container {
-  text-align: center; /* Centrerer alt indhold i containeren */
+  text-align: center;
   margin: 30px 0;
 }
 
@@ -80,6 +82,10 @@ ul {
 .cta a {
   color: #f7f3e8;
   text-decoration: none;
+}
+
+.cta:hover {
+  background-color: #426449;
 }
 
 /* DESKTOP */

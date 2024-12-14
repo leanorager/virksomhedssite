@@ -114,6 +114,8 @@ header {
     font-size: 15px;
   }
 }
+
+/* MOBIL */
 h1 {
   font-family: quicksand;
   font-weight: 100;
@@ -130,7 +132,10 @@ h3 {
   font-weight: 100;
   font-size: 18px;
 }
-p {
+p,
+ul,
+li,
+a {
   font-family: playfair;
   font-size: 14px;
 }
@@ -201,7 +206,10 @@ footer {
     font-weight: 100;
     font-size: 23px;
   }
-  p {
+  p,
+  ul,
+  li,
+  a {
     font-family: playfair;
     font-size: 18px;
   }
