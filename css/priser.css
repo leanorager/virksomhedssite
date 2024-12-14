@@ -1,0 +1,9 @@
+/* MOBIL */
+
+/* DESKTOP */
+@media (min-width: 850px) {
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}

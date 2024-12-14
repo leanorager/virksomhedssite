@@ -1,7 +1,15 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 html {
@@ -169,6 +177,11 @@ footer {
 
 /* herunder laves layoyt til desktop format */
 @media (min-width: 850px) {
+  /* main {
+    max-width: 1000px;
+    margin: 0 auto;
+  } */
+
   .logo img {
     width: 30%;
   }
