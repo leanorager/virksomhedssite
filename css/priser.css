@@ -27,11 +27,11 @@ body {
 } /* tjek op på dette */
 
 .col {
-  padding: 50px 20px;
+  margin: 50px 20px;
 }
 
-.padding_none {
-  padding: 0px 20px 50px 20px;
+.margin_none {
+  margin-top: 0px;
 }
 
 h1 {
@@ -97,5 +97,44 @@ ul {
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .col,
+  .col_color {
+    background-color: rgb(224, 203, 175);
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  p {
+    margin: 0px 20px 10px 20px;
+  }
+  h3 {
+    margin-left: 20px;
+  }
+  ul {
+    margin-left: 20px;
+  }
+
+  .col,
+  .col_color {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col > :last-child,
+  .col_color > :last-child {
+    margin-top: auto;
+    margin-bottom: 75px;
+  }
+
+  .col > :nth-last-child(2),
+  .col_color > :nth-last-child(2) {
+    margin-bottom: 40px;
+  }
+
+  img {
+    margin-top: 50px;
   }
 }
