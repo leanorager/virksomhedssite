@@ -24,7 +24,7 @@ body {
 .col_color {
   background-color: rgb(224, 203, 175);
   padding: 50px 20px;
-} /* tjek op på dette */
+}
 
 .col {
   margin: 50px 20px;
@@ -136,5 +136,10 @@ ul {
 
   img {
     margin-top: 50px;
+  }
+
+  h2 {
+    word-break: break-word;
+    hyphens: auto;
   }
 }
