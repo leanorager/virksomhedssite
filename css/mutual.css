@@ -50,10 +50,10 @@ header {
 }
 .menu a {
   display: block;
-  padding: 7px;
+  padding: 7px 20px 10px 20px;
   color: #030000f0;
   background-color: var(--primary-color);
-  border-radius: 10px;
+  border-radius: 20px;
 
   text-decoration: none;
 }
@@ -77,7 +77,7 @@ header {
 .burger {
   display: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .menu {
     display: none;
   }

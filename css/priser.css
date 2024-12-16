@@ -56,8 +56,8 @@ p {
   font-weight: 1000;
 } /* tjek op på dette */
 
-ul,
-li {
+main ul,
+main li {
   padding-left: 20px;
 }
 
@@ -98,6 +98,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    margin: 0px 20px;
   }
 
   .col,
