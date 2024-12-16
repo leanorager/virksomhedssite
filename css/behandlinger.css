@@ -1,3 +1,12 @@
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgb(247, 243, 232);
+}
+
 .grid_1-1_beige {
   background-color: var(--primary-color);
   display: grid;
@@ -18,7 +27,6 @@
 .grid_1-1_brun img {
   order: 1; /* Gør billedet først */
   object-fit: cover;
-  margin-left: 100px;
 }
 
 .grid_1-1_brun div {
@@ -28,8 +36,8 @@
 
 h1 {
   background-color: var(--primary-color);
-  padding-bottom: 40px;
-  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 h2 {
@@ -49,13 +57,12 @@ p {
 
 main img {
   padding-bottom: 15px;
-  width: 75%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   padding: 15px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .grid_1-1_beige,
   .grid_1-1_brun {
     display: grid;
@@ -87,16 +94,36 @@ main img {
   }
 
   .grid_1-1_brun img {
-    width: 50%;
-    margin-right: 80px;
+    padding: 20px 50px;
+  }
+
+  .grid_1-1_brun img {
+    padding: 10px 50px 50px 50px;
+  }
+  .grid_1-1_brun div {
+    padding: 20px 50px;
+    margin: 0px;
   }
 
   .grid_1-1_beige img {
-    width: 50%;
+    padding: 10px 50px 50px 50px;
+  }
+
+  .grid_1-1_beige div {
+    padding: 20px 50px;
+    margin: 0px;
+  }
+
+  p {
+    padding: 0px;
   }
 
   h1 {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     padding-top: 10px;
+  }
+
+  h2 {
+    padding-top: 0px;
   }
 }
