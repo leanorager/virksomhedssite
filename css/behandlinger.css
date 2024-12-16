@@ -29,6 +29,7 @@
 h1 {
   background-color: var(--primary-color);
   padding-bottom: 40px;
+  padding-top: 10px;
 }
 
 h2 {
@@ -46,14 +47,11 @@ p {
   text-align: justify;
 }
 
-img {
-  aspect-ratio: 1 / 1;
+main img {
+  padding-bottom: 15px;
   width: 70%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-}
-
-.logo {
-  width: 20%;
 }
 
 @media (max-width: 800px) {
@@ -63,7 +61,7 @@ img {
     grid-template-columns: 1fr;
   }
 
-  img {
+  main img {
     aspect-ratio: 1 / 1;
   }
 
@@ -98,9 +96,6 @@ img {
 
   h1 {
     padding-bottom: 20px;
-  }
-
-  .logo {
-    width: 50%;
+    padding-top: 10px;
   }
 }
