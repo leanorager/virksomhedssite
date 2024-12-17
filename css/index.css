@@ -115,6 +115,9 @@ body {
   p {
     padding-left: 20px;
   }
+  .forside {
+    margin-bottom: 15px;
+  }
   .knap_til_behandlinger {
     display: flex;
     justify-content: center;
@@ -172,16 +175,6 @@ body {
   }
 }
 @media (min-width: 871px) {
-  .forside {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  h1 {
-    padding-top: 4rem;
-  }
-  p {
-    padding-left: 20px;
-  }
   .knap_til_behandlinger {
     display: flex;
     justify-content: center;
@@ -197,45 +190,32 @@ body {
     font-size: 18px;
     margin-top: 15px;
   }
-  .knap_til_mail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .img_forside img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
     padding: 7px;
-    margin-left: 9rem;
-    margin-right: 9rem;
-    background-color: rgb(120, 157, 128);
-    border-radius: 7px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    margin-top: 15px;
+    filter: brightness(85%);
   }
-  .booking {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .img1 {
+    aspect-ratio: 2 / 1.1;
+    grid-column: 1 / span 2;
+  }
+  .img2 {
+    aspect-ratio: 1 / 1;
+    grid-row: 2 / span 1;
+  }
+  .img3 {
+    aspect-ratio: 1 / 1;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
   }
   .desktop_img {
     width: 85%;
     height: 102.2%;
     display: block;
     padding-left: 9rem;
-  }
-  .booking_tekst {
-    padding-right: 25px;
-    padding-top: 10rem;
-  }
-  .telefon1,
-  .telefon2 {
-    text-align: center;
-    font-size: 30px;
-  }
-  .telefon1 {
-    padding-top: 25px;
-  }
-  .faktaboks {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 25px;
   }
 }
