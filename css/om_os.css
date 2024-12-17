@@ -182,7 +182,9 @@ h3 {
     margin-top: 10%;
     text-align: justify;
   }
-
+  .col2 {
+    order: 1;
+  }
   .col4 {
     margin-top: 10%;
     padding-left: 15px;
