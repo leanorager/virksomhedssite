@@ -4,92 +4,47 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2em;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-/* main {
-  max-width: 1100px;
-  margin: 0 auto;
-} */
-
-.section1 {
-  background-color: var(--primary-color);
-}
-
-.section2 {
-  background-color: var(--secondary-color);
-}
-.section3 {
-  background-color: rgb(120, 157, 128);
-}
-
-.section_footer {
-  background-color: rgb(224, 203, 175);
-}
-
-footer {
-  background-color: rgb(224, 203, 175);
-}
-
-.overskrift {
-  padding: 10px;
-  padding-left: 15px;
-}
-
 h1 {
-  padding-top: 20px;
+  padding-bottom: 10px;
 }
-.h2 {
-  text-align: center;
-  padding-bottom: 7px;
-  padding-left: 20px;
-}
-
-h3 {
-  padding-left: 15px;
-}
-.navne {
-  margin-left: 1.5rem;
-  margin-bottom: 2rem;
-}
-p {
+.section1 {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 20px;
-  text-align: justify;
+  background-color: rgb(247, 243, 232);
+}
+.section2 {
+  background-color: rgb(247, 243, 232);
+}
+.col2,
+.col3 {
+  padding: 15px;
 }
 
-.col1 {
-  margin-top: 10%;
-  text-align: justify;
+.col2 {
+  order: -1;
 }
-
-.col4 {
-  margin-top: 10%;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  text-align: justify;
-}
-
-.mainsection {
-  padding: 1em 3em;
-}
-
 main img {
   width: 100%;
   height: auto;
   display: block;
   object-fit: cover;
-  padding: 40px 40px 10px 40px;
 }
-
+.col4 {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+h3 {
+  padding-top: 12px;
+}
+.anbefalinger {
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+.anbefalinger {
+  color: rgb(247, 243, 232);
+}
 .imgA {
   aspect-ratio: 1/1;
   object-position: bottom;
@@ -99,8 +54,8 @@ main img {
   aspect-ratio: 28/30;
   object-position: center;
 }
-.anbefalinger {
-  color: rgb(247, 243, 232);
+.section3 {
+  background-color: rgb(120, 157, 128);
 }
 .e-infinite-loop-carousel {
   overflow: hidden;
@@ -162,6 +117,164 @@ main img {
   }
 }
 
+@media (min-width: 850px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* main {
+    max-width: 1100px;
+    margin: 0 auto;
+  } */
+
+  .section1 {
+    background-color: var(--primary-color);
+  }
+
+  .section2 {
+    background-color: var(--secondary-color);
+  }
+  .section3 {
+    background-color: rgb(120, 157, 128);
+  }
+
+  .section_footer {
+    background-color: rgb(224, 203, 175);
+  }
+
+  footer {
+    background-color: rgb(224, 203, 175);
+  }
+
+  .overskrift {
+    padding: 10px;
+    padding-left: 15px;
+  }
+
+  h1 {
+    padding-top: 20px;
+  }
+  .h2 {
+    text-align: center;
+    padding-bottom: 7px;
+    padding-left: 20px;
+  }
+
+  h3 {
+    padding-left: 15px;
+  }
+  .navne {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  p {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    text-align: justify;
+  }
+
+  .col1 {
+    margin-top: 10%;
+    text-align: justify;
+  }
+
+  .col4 {
+    margin-top: 10%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: justify;
+  }
+
+  .mainsection {
+    padding: 1em 3em;
+  }
+
+  main img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    padding: 40px 40px 10px 40px;
+  }
+
+  .imgA {
+    aspect-ratio: 1/1;
+    object-position: bottom;
+  }
+
+  .imgAn {
+    aspect-ratio: 28/30;
+    object-position: center;
+  }
+  .anbefalinger {
+    color: rgb(247, 243, 232);
+  }
+  .e-infinite-loop-carousel {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .e-carousel-items-wrapper {
+    display: inline-flex;
+
+    /*adjust the timing function as required. Default is 20s but will have to be increased as more items are added to the carousel. */
+    animation: marquee 20s linear infinite;
+    white-space: nowrap;
+  }
+
+  .e-carousel-items {
+    margin: 30px 0;
+  }
+
+  .e-carousel-item {
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  .e-statistic-tile {
+    border-radius: 15px;
+    border: solid 5px;
+    padding: 20px;
+    margin-bottom: 5rem;
+    width: 200px;
+    text-align: center;
+    color: rgb(247, 243, 232);
+  }
+
+  .e-statistic-tile__value {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    text-wrap: balance;
+    color: rgb(247, 243, 232);
+  }
+
+  .e-statistic-tile__label {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    text-wrap: balance;
+    color: rgb(247, 243, 232);
+  }
+
+  /* Marquee animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
 @media (min-width: 850px) {
 }
 .grid_1-1 {
