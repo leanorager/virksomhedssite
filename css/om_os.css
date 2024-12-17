@@ -9,6 +9,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2em;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* main {
@@ -23,9 +25,12 @@
 .section2 {
   background-color: var(--secondary-color);
 }
-
 .section3 {
   background-color: rgb(120, 157, 128);
+}
+
+.section_footer {
+  background-color: rgb(224, 203, 175);
 }
 
 footer {
@@ -33,7 +38,7 @@ footer {
 }
 
 .overskrift {
-  padding: 1em;
+  padding: 10px;
   padding-left: 15px;
 }
 
@@ -46,16 +51,17 @@ h1 {
   padding-left: 20px;
 }
 
-.h3 {
+h3 {
   padding-left: 15px;
-  padding: 1em;
-  padding-left: 30px;
 }
-
+.navne {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
 p {
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   text-align: justify;
 }
 
@@ -93,6 +99,9 @@ main img {
   aspect-ratio: 28/30;
   object-position: center;
 }
+.anbefalinger {
+  color: rgb(247, 243, 232);
+}
 .e-infinite-loop-carousel {
   overflow: hidden;
   white-space: nowrap;
@@ -120,20 +129,26 @@ main img {
   border-radius: 15px;
   border: solid 5px;
   padding: 20px;
+  margin-bottom: 5rem;
   width: 200px;
   text-align: center;
+  color: rgb(247, 243, 232);
 }
 
 .e-statistic-tile__value {
   font-size: 20px;
+  font-style: italic;
   text-align: center;
   text-wrap: balance;
+  color: rgb(247, 243, 232);
 }
 
 .e-statistic-tile__label {
   font-size: 20px;
+  font-style: italic;
   text-align: center;
   text-wrap: balance;
+  color: rgb(247, 243, 232);
 }
 
 /* Marquee animation */
