@@ -217,5 +217,7 @@ body {
     height: 102.2%;
     display: block;
     padding-left: 9rem;
+    overflow: hidden;
+    object-fit: cover;
   }
 }
