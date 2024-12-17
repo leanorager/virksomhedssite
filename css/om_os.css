@@ -5,22 +5,10 @@
   box-sizing: border-box;
 }
 
-.imgA {
-  width: 400px;
-  height: auto;
-  display: block;
-  padding: 5px;
-  position: relative;
-  left: 900px;
-}
-
-.imgAn {
-  width: 400px;
-  height: auto;
-  display: block;
-  padding: 5px;
-  position: relative;
-  left: 100px;
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
 }
 
 .section1 {
@@ -35,15 +23,22 @@
   background-color: rgb(120, 157, 128);
 }
 
+.overskrift {
+  padding: 1em;
+  padding-left: 15px;
+}
+
 .h2 {
   text-align: center;
   padding-bottom: 7px;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 .h3 {
-  padding-left: 15px;
-  padding-top: 7px;
+  /* padding-left: 15px;
+  padding-top: 7px;  */
+  padding: 1em;
+  padding-left: 30px;
 }
 
 p {
@@ -53,139 +48,87 @@ p {
   text-align: justify;
 }
 
-.wrapper {
-  max-width: 800px;
-  margin-inline: auto;
+.col1 {
+  margin-top: 10%;
+  text-align: justify;
 }
 
-.carousel {
-  margin-left: 15%;
-  margin-right: 15%;
+.col4 {
+  margin-top: 10%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  text-align: justify;
 }
 
-ul.slides {
-  display: block;
-  position: relative;
-  height: 600px;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  list-style: none;
+.mainsection {
+  padding: 1em 3em;
 }
 
-.slides * {
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-}
-
-ul.slides input {
-  display: none;
-}
-
-.slide-container {
-  display: block;
-}
-
-.slide-image {
-  display: block;
-  position: absolute;
+img {
   width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0;
-  transition: all 0.7s ease-in-out;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  padding: 40px;
 }
 
-.slide-image img {
-  width: auto;
-  min-width: 100%;
-  height: 100%;
-  border: 5px solid;
-  border-color: palevioletred;
+.e-infinite-loop-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
 }
 
-.carousel-controls {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  font-size: 100px;
-  line-height: 600px;
-  color: #fff;
+.e-carousel-items-wrapper {
+  display: inline-flex;
+
+  /*adjust the timing function as required. Default is 20s but will have to be increased as more items are added to the carousel. */
+  animation: marquee 20s linear infinite;
+  white-space: nowrap;
 }
 
-.carousel-controls label {
-  display: none;
-  position: absolute;
-  padding: 0 20px;
-  opacity: 0;
-  transition: opacity 0.2s;
-  cursor: pointer;
+.e-carousel-items {
+  margin: 30px 0;
 }
 
-.slide-image:hover + .carousel-controls label {
-  opacity: 0.5;
+.e-carousel-item {
+  display: inline-block;
+  margin-right: 30px;
 }
 
-.carousel-controls label:hover {
-  opacity: 1;
-}
-
-.carousel-controls .prev-slide {
-  width: 49%;
-  text-align: left;
-  left: 0;
-}
-
-.carousel-controls .next-slide {
-  width: 49%;
-  text-align: right;
-  right: 0;
-}
-
-.carousel-dots {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 20px;
-  z-index: 999;
+.e-statistic-tile {
+  border-radius: 15px;
+  border: solid 5px;
+  padding: 20px;
+  width: 200px;
   text-align: center;
 }
 
-.carousel-dots .carousel-dot {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #fff;
-  opacity: 0.5;
-  margin: 10px;
+.e-statistic-tile__value {
+  font-size: 20px;
+  text-align: center;
+  text-wrap: balance;
 }
 
-input:checked + .slide-container .slide-image {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 1s ease-in-out;
+.e-statistic-tile__label {
+  font-size: 20px;
+  text-align: center;
+  text-wrap: balance;
 }
 
-input:checked + .slide-container .carousel-controls label {
-  display: block;
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-input#img-1:checked ~ .carousel-dots label#img-dot-1,
-input#img-2:checked ~ .carousel-dots label#img-dot-2,
-input#img-3:checked ~ .carousel-dots label#img-dot-3,
-input#img-4:checked ~ .carousel-dots label#img-dot-4,
-input#img-5:checked ~ .carousel-dots label#img-dot-5,
-input#img-6:checked ~ .carousel-dots label#img-dot-6 {
-  opacity: 1;
+@media (min-width: 850px) {
 }
-
-input:checked + .slide-container .nav label {
-  display: block;
+.grid_1-1 {
+  display: grid;
 }
